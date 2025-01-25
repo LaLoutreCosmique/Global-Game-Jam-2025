@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 4253485787590699342}
   - component: {fileID: 4732566759844767269}
   - component: {fileID: 6093105613235196611}
+  - component: {fileID: 8826676579811629765}
   m_Layer: 0
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,6 +240,19 @@ SpringJoint2D:
   m_Distance: 0.5839879
   m_DampingRatio: 1
   m_Frequency: 4
+--- !u!114 &8826676579811629765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149504143132625832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9028cc737b4774285716fc7c271177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8076212413249064199}
 --- !u!1 &652212725850957251
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,9 +269,10 @@ GameObject:
   - component: {fileID: 8593935283582327930}
   - component: {fileID: 9175848484704867949}
   - component: {fileID: 3052819942908805037}
+  - component: {fileID: 2125847314330900727}
   m_Layer: 0
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -478,6 +493,19 @@ SpringJoint2D:
   m_Distance: 0.5656157
   m_DampingRatio: 1
   m_Frequency: 4
+--- !u!114 &2125847314330900727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652212725850957251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9028cc737b4774285716fc7c271177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8076212413249064199}
 --- !u!1 &1167237159810333498
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,9 +522,10 @@ GameObject:
   - component: {fileID: 3216166838575658913}
   - component: {fileID: 2724536576726903928}
   - component: {fileID: 7869591088702294302}
+  - component: {fileID: 4281036834408223051}
   m_Layer: 0
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -717,6 +746,19 @@ SpringJoint2D:
   m_Distance: 0.58916634
   m_DampingRatio: 1
   m_Frequency: 4
+--- !u!114 &4281036834408223051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167237159810333498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9028cc737b4774285716fc7c271177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8076212413249064199}
 --- !u!1 &2865391486441208972
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,9 +962,10 @@ GameObject:
   - component: {fileID: 3314752145644334352}
   - component: {fileID: 4460471917484214111}
   - component: {fileID: 2305912353586046636}
+  - component: {fileID: 4128977602050605817}
   m_Layer: 0
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1143,6 +1186,19 @@ SpringJoint2D:
   m_Distance: 0.98813856
   m_DampingRatio: 1
   m_Frequency: 4
+--- !u!114 &4128977602050605817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3358656287653565760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9028cc737b4774285716fc7c271177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8076212413249064199}
 --- !u!1 &4155110979246246129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,9 +1215,10 @@ GameObject:
   - component: {fileID: 4249909351990268689}
   - component: {fileID: 8412974256201846561}
   - component: {fileID: 8272963514384128040}
+  - component: {fileID: 7814558770653931057}
   m_Layer: 0
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1382,6 +1439,19 @@ SpringJoint2D:
   m_Distance: 0.54024136
   m_DampingRatio: 1
   m_Frequency: 4
+--- !u!114 &7814558770653931057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4155110979246246129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9028cc737b4774285716fc7c271177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8076212413249064199}
 --- !u!1 &7923749334879759580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,9 +1468,10 @@ GameObject:
   - component: {fileID: 6159518058771575276}
   - component: {fileID: 3220850520956199342}
   - component: {fileID: 7334075649875337783}
+  - component: {fileID: 9169705633239537487}
   m_Layer: 0
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1621,6 +1692,19 @@ SpringJoint2D:
   m_Distance: 0.6105121
   m_DampingRatio: 1
   m_Frequency: 4
+--- !u!114 &9169705633239537487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923749334879759580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9028cc737b4774285716fc7c271177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8076212413249064199}
 --- !u!1 &8466746090866992954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,9 +1721,10 @@ GameObject:
   - component: {fileID: 948345699313994511}
   - component: {fileID: 1183811704389894167}
   - component: {fileID: 6767391250745793533}
+  - component: {fileID: 3380029822921351217}
   m_Layer: 0
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1860,6 +1945,19 @@ SpringJoint2D:
   m_Distance: 0.544306
   m_DampingRatio: 1
   m_Frequency: 4
+--- !u!114 &3380029822921351217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8466746090866992954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9028cc737b4774285716fc7c271177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8076212413249064199}
 --- !u!1 &8673115754522742864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,6 +1970,7 @@ GameObject:
   - component: {fileID: 2783106240594427506}
   - component: {fileID: 7456326676829699997}
   - component: {fileID: 3446751069803922544}
+  - component: {fileID: 8076212413249064199}
   m_Layer: 0
   m_Name: Bubble
   m_TagString: Untagged
@@ -1987,3 +2086,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &8076212413249064199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8673115754522742864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79497159fdb197640a6f0099549639ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDie:
+    m_PersistentCalls:
+      m_Calls: []
+  spriteRenderer: {fileID: 8418777557048391263}
