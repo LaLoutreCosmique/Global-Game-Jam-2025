@@ -1972,7 +1972,7 @@ GameObject:
   - component: {fileID: 3446751069803922544}
   - component: {fileID: 8076212413249064199}
   m_Layer: 0
-  m_Name: Bubble
+  m_Name: MainBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

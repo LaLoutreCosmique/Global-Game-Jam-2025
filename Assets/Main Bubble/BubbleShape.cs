@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.U2D;
 
-namespace Bubble
+namespace MainBubble
 {
-    public class BubbleShape : MonoBehaviour
+    public class MainBubbleShape : MonoBehaviour
     {
         const float slpineOffset = 0.1f;
 
