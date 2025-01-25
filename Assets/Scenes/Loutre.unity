@@ -265,6 +265,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: repulsor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1522952007874838558, guid: 3181a6cbacd97d340bfd41403e42f9e3, type: 3}
+      propertyPath: m_Size.y
+      value: 7.6016665
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522952007874838558, guid: 3181a6cbacd97d340bfd41403e42f9e3, type: 3}
+      propertyPath: m_Offset.y
+      value: 4.0299335
+      objectReference: {fileID: 0}
+    - target: {fileID: 3800220758477581254, guid: 3181a6cbacd97d340bfd41403e42f9e3, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2.51
+      objectReference: {fileID: 0}
     - target: {fileID: 4322635015334052236, guid: 3181a6cbacd97d340bfd41403e42f9e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.7554407
@@ -323,7 +335,7 @@ GameObject:
   - component: {fileID: 544099804}
   m_Layer: 0
   m_Name: Square (2)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,8 +450,8 @@ Transform:
   m_GameObject: {fileID: 544099803}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.97, y: -2.99, z: 0}
-  m_LocalScale: {x: 0.2, y: 5, z: 1}
+  m_LocalPosition: {x: 5.97, y: 0.2517, z: 0}
+  m_LocalScale: {x: 0.2, y: 11.4835, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

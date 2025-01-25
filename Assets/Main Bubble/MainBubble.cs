@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.U2D;
 
-namespace Bubble
+namespace MainBubble
 {
-    public class Bubble : MonoBehaviour
+    public class MainBubble : MonoBehaviour
     {
         public UnityEvent onPop;
 

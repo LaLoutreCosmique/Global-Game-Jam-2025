@@ -2,11 +2,11 @@ using System;
 using Obstacles;
 using UnityEngine;
 
-namespace Bubble
+namespace MainBubble
 {
-    public class BubblePoint : MonoBehaviour
+    public class MainBubblePoint : MonoBehaviour
     {
-        [SerializeField] Bubble parent;
+        [SerializeField] MainBubble parent;
 
         Rigidbody2D m_Rb2D;
 
