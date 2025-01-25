@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.U2D;
@@ -9,9 +10,11 @@ namespace MainBubble
         public UnityEvent onPop;
 
         [SerializeField] SpriteShapeRenderer spriteRenderer;
+
+        public float maxSpeed;
         
         bool m_IsDead;
-        
+
         public void Pop()
         {
             if (m_IsDead) return;

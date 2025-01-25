@@ -109,7 +109,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -175,7 +175,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.6105121
+  m_Distance: 0.6105122
   m_MaxDistanceOnly: 0
 --- !u!231 &4253485787590699342
 SpringJoint2D:
@@ -216,7 +216,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.6105121
+  m_Distance: 0.6105122
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!231 &6093105613235196611
@@ -362,7 +362,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -615,7 +615,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -681,7 +681,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5904278
+  m_Distance: 0.59042764
   m_MaxDistanceOnly: 0
 --- !u!231 &3216166838575658913
 SpringJoint2D:
@@ -701,7 +701,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.70586395
+  m_Distance: 0.7058638
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!231 &2724536576726903928
@@ -722,7 +722,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5904278
+  m_Distance: 0.59042764
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!231 &7869591088702294302
@@ -1055,7 +1055,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1183,7 +1183,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.98813856
+  m_Distance: 0.98813874
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!114 &4128977602050605817
@@ -1308,7 +1308,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1561,7 +1561,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1647,7 +1647,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5793486
+  m_Distance: 0.57934886
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!231 &3220850520956199342
@@ -1689,7 +1689,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.6105121
+  m_Distance: 0.6105122
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!114 &9169705633239537487
@@ -1814,7 +1814,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2016,7 +2016,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2098,7 +2098,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79497159fdb197640a6f0099549639ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDie:
+  onPop:
     m_PersistentCalls:
       m_Calls: []
   spriteRenderer: {fileID: 8418777557048391263}
+  maxSpeed: 7
