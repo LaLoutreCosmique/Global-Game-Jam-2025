@@ -2221,3 +2221,4 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   spriteRenderer: {fileID: 8418777557048391263}
+  eyes: {fileID: 6181175269622017831}

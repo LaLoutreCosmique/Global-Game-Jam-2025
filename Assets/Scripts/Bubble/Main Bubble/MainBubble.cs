@@ -12,6 +12,7 @@ namespace Bubble.MainBubble
         public UnityEvent onCollisionExit;
 
         [SerializeField] SpriteShapeRenderer spriteRenderer;
+        [SerializeField] Animator eyes;
         
         public override void Pop()
         {
@@ -26,6 +27,7 @@ namespace Bubble.MainBubble
             base.StartCollide(point);
             
             onCollisionEnter?.Invoke();
+            eyes.SetTrigger("Hurt");
         }
 
         public override void StopCollide(BubblePoint point)
