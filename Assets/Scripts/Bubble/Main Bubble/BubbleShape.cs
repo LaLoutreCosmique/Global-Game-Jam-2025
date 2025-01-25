@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.U2D;
 
-namespace MainBubble
+namespace Bubble.MainBubble
 {
     public class MainBubbleShape : MonoBehaviour
     {
