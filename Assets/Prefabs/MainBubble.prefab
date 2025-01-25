@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4732566759844767269}
   - component: {fileID: 6093105613235196611}
   - component: {fileID: 8826676579811629765}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 9175848484704867949}
   - component: {fileID: 3052819942908805037}
   - component: {fileID: 2125847314330900727}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 2724536576726903928}
   - component: {fileID: 7869591088702294302}
   - component: {fileID: 4281036834408223051}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -770,7 +770,7 @@ GameObject:
   - component: {fileID: 5013321970771423888}
   - component: {fileID: 8418777557048391263}
   - component: {fileID: 3497057252857251576}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite Shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -964,7 +964,7 @@ GameObject:
   - component: {fileID: 4460471917484214111}
   - component: {fileID: 2305912353586046636}
   - component: {fileID: 4128977602050605817}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 8412974256201846561}
   - component: {fileID: 8272963514384128040}
   - component: {fileID: 7814558770653931057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1464,7 +1464,7 @@ GameObject:
   - component: {fileID: 5046238175977652893}
   - component: {fileID: 7615573495188001213}
   - component: {fileID: 6181175269622017831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: T_Player_Eyes_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1580,7 +1580,7 @@ GameObject:
   - component: {fileID: 3220850520956199342}
   - component: {fileID: 7334075649875337783}
   - component: {fileID: 9169705633239537487}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1833,7 +1833,7 @@ GameObject:
   - component: {fileID: 1183811704389894167}
   - component: {fileID: 6767391250745793533}
   - component: {fileID: 3380029822921351217}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 7456326676829699997}
   - component: {fileID: 3446751069803922544}
   - component: {fileID: 8076212413249064199}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MainBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2098,7 +2098,7 @@ Transform:
   m_GameObject: {fileID: 8673115754522742864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.957, y: 2.333, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2211,6 +2211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 7
+  maxScale: 2
   onPop:
     m_PersistentCalls:
       m_Calls: []

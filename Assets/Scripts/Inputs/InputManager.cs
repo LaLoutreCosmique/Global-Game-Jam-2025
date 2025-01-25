@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -19,6 +20,8 @@ namespace Inputs
         [Header("Debug")]
         [SerializeField] bool m_EnableInGameInputOnLoad = true;
 
+        bool m_LeftClickHeld;
+
         void Awake()
         {
             m_Inputs = new PlayerInputs();
@@ -32,23 +35,41 @@ namespace Inputs
         void OnEnable()
         {
             m_InGameInputs.LeftClick.started += _ => TriggerClickPressed();
-            m_InGameInputs.LeftClick.performed += _ => TriggerClickHeld();
             m_InGameInputs.LeftClick.canceled += _ => TriggerClickReleased();
         }
 
         void OnDisable()
         {
             m_InGameInputs.LeftClick.started -= _ => TriggerClickPressed();
-            m_InGameInputs.LeftClick.performed -= _ => TriggerClickHeld();
             m_InGameInputs.LeftClick.canceled -= _ => TriggerClickReleased();
 
         }
-        
-        public void TriggerClickPressed() { onLeftClickPressed?.Invoke(Mouse.current.position.ReadValue()); }
-        public void TriggerClickHeld() { onLeftClickHeld?.Invoke(Mouse.current.position.ReadValue()); }
-        public void TriggerClickReleased() { onLeftClickReleased?.Invoke(); }
+
+        void TriggerClickPressed()
+        {
+            m_LeftClickHeld = true;
+            StartCoroutine(HoldClick());
+            onLeftClickPressed?.Invoke(Mouse.current.position.ReadValue());
+        }
+        void TriggerClickHeld() { onLeftClickHeld?.Invoke(Mouse.current.position.ReadValue()); }
+
+        void TriggerClickReleased()
+        {
+            m_LeftClickHeld = false;
+            onLeftClickReleased?.Invoke();
+        }
         
         public void EnableInGameInputs() { m_InGameInputs.Enable(); }
         public void DisableInGameInputs() { m_InGameInputs.Disable(); }
+
+        IEnumerator HoldClick()
+        {
+            yield return new WaitForSeconds(0.1f);
+            while (m_LeftClickHeld)
+            {
+                TriggerClickHeld();
+                yield return new WaitForEndOfFrame();
+            }
+        }
     }
 }
