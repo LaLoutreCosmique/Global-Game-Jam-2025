@@ -1,19 +1,19 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Spawner : MonoBehaviour
 {
     //[SerializeField] private GameObject[] bulles = new GameObject[1];
     [SerializeField] private GameObject bulle;
     //[SerializeField] private int _slotSelected;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    void Awake()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -32,7 +32,7 @@ public class Spawner : MonoBehaviour
 
     private void Spawning(GameObject bulleChoosen)
     {
-        var actualBulle =Instantiate(bulleChoosen, GetMousePosition(), Quaternion.identity);
+        var actualBulle = Instantiate(bulleChoosen, GetMousePosition(), Quaternion.identity);
         Destroy(actualBulle, 3f);
     }
 

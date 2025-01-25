@@ -23,9 +23,22 @@ namespace MainBubble
 
         void OnCollisionEnter2D(Collision2D other)
         {
-            if (!other.transform.CompareTag("Enemy")) return;
+            if (other.transform.CompareTag("Player")) return;
+
+            if (other.transform.CompareTag("Enemy"))
+            {
+                parent.Pop();
+                return;
+            }
             
-            parent.Pop();
+            parent.StartCollide(this);
+        }
+
+        void OnCollisionExit2D(Collision2D other)
+        {
+            if (other.transform.CompareTag("Player")) return;
+            
+            parent.StopCollide(this);
         }
 
         void OnTriggerStay2D(Collider2D other)
