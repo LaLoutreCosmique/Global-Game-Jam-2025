@@ -70,3 +70,11 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/DOTween_1_2_765/DOTween/Editor/Imgs/DOTweenIcon.png.meta
+Assets/DOTween_1_2_765/DOTween/Editor/Imgs/DOTweenMiniIcon.png.meta
+Assets/DOTween_1_2_765/DOTween/Editor/Imgs/Footer.png.meta
+Assets/DOTween_1_2_765/DOTween/Editor/Imgs/Footer_dark.png.meta
+Assets/DOTween_1_2_765/DOTween/Editor/Imgs/Header.jpg.meta
+ProjectSettings/EditorBuildSettings.asset
+ProjectSettings/ProjectSettings.asset
+ProjectSettings/ShaderGraphSettings.asset
