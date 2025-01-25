@@ -27,7 +27,7 @@ public class Spawner : MonoBehaviour
     
     private Vector2 GetMousePosition()
     {
-        return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        return UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
 
     private void Spawning(GameObject bulleChoosen)
