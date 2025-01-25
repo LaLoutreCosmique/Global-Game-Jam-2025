@@ -175,7 +175,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.6105121
+  m_Distance: 0.61051214
   m_MaxDistanceOnly: 0
 --- !u!231 &4253485787590699342
 SpringJoint2D:
@@ -216,7 +216,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.6105121
+  m_Distance: 0.61051214
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!231 &6093105613235196611
@@ -490,7 +490,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5656157
+  m_Distance: 0.5656156
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!114 &2125847314330900727
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_UpdateShadow: 0
   m_ShadowDetail: 16
   m_ShadowOffset: 0.5
-  m_BoundsScale: 2
+  m_BoundsScale: 1
   m_Creator: {fileID: 0}
   m_Modifiers: []
   m_ColliderSegment: []
@@ -1184,7 +1184,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.9881387
+  m_Distance: 0.98813874
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!114 &4128977602050605817
@@ -1375,7 +1375,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5656157
+  m_Distance: 0.5656156
   m_MaxDistanceOnly: 0
 --- !u!231 &4249909351990268689
 SpringJoint2D:
@@ -1395,7 +1395,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.69744736
+  m_Distance: 0.6974474
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!231 &8412974256201846561
@@ -1416,7 +1416,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5656157
+  m_Distance: 0.5656156
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!231 &8272963514384128040
@@ -1437,7 +1437,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5402415
+  m_Distance: 0.5402416
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!114 &7814558770653931057
@@ -1758,7 +1758,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5793486
+  m_Distance: 0.57934874
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!231 &3220850520956199342
@@ -1800,7 +1800,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.6105121
+  m_Distance: 0.61051214
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!114 &9169705633239537487
@@ -1991,7 +1991,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5402415
+  m_Distance: 0.5402416
   m_MaxDistanceOnly: 0
 --- !u!231 &948345699313994511
 SpringJoint2D:
@@ -2032,7 +2032,7 @@ SpringJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.5402415
+  m_Distance: 0.5402416
   m_DampingRatio: 1
   m_Frequency: 4
 --- !u!231 &6767391250745793533
@@ -2161,6 +2161,7 @@ MonoBehaviour:
   - {fileID: 7378910399194789228}
   - {fileID: 7803053024042249222}
   tangentMagnitude: 0.33
+  offset: 0.5
 --- !u!58 &3446751069803922544
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2209,6 +2210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79497159fdb197640a6f0099549639ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 7
   onPop:
     m_PersistentCalls:
       m_Calls: []
@@ -2219,4 +2221,3 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   spriteRenderer: {fileID: 8418777557048391263}
-  maxSpeed: 7
