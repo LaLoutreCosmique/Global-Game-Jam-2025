@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Bubble
 {
     public class Bubble : MonoBehaviour
     {
         public float maxSpeed;
+        [SerializeField] float maxScale;
         
         protected bool m_IsDead;
         protected bool m_IsColliding;
@@ -34,6 +36,12 @@ namespace Bubble
             if (collidingPoints.Count != 0) return;
             
             m_IsColliding = false;
+        }
+
+        public void Inflate()
+        {
+            if (transform.localScale.magnitude < maxScale)
+                transform.localScale *= 1 + Time.deltaTime;
         }
     }
 }
