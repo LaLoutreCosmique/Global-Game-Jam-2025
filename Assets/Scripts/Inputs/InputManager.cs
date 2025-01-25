@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace Inputs
 {
@@ -11,12 +12,12 @@ namespace Inputs
         PlayerInputs.InGameActions m_InGameInputs;
 
         [Header("Events")]
-        public UnityEvent<Vector2> onClickPressed;
-        public UnityEvent<Vector2> onClickHeld;
-        public UnityEvent onClickReleased;
+        public UnityEvent<Vector2> onLeftClickPressed;
+        public UnityEvent<Vector2> onLeftClickHeld;
+        public UnityEvent onLeftClickReleased;
 
         [Header("Debug")]
-        [SerializeField] bool m_EnableInGameInputOnLoad;
+        [SerializeField] bool m_EnableInGameInputOnLoad = true;
 
         void Awake()
         {
@@ -30,19 +31,22 @@ namespace Inputs
 
         void OnEnable()
         {
-            m_InGameInputs.Click.started += _ => TriggerClickPressed();
-            m_InGameInputs.Click.performed += _ => TriggerClickHeld();
-            m_InGameInputs.Click.canceled += _ => TriggerClickReleased();
+            m_InGameInputs.LeftClick.started += _ => TriggerClickPressed();
+            m_InGameInputs.LeftClick.performed += _ => TriggerClickHeld();
+            m_InGameInputs.LeftClick.canceled += _ => TriggerClickReleased();
         }
 
         void OnDisable()
         {
-            
+            m_InGameInputs.LeftClick.started -= _ => TriggerClickPressed();
+            m_InGameInputs.LeftClick.performed -= _ => TriggerClickHeld();
+            m_InGameInputs.LeftClick.canceled -= _ => TriggerClickReleased();
+
         }
         
-        public void TriggerClickPressed() { onClickPressed?.Invoke(Mouse.current.position.ReadValue()); }
-        public void TriggerClickHeld() { onClickHeld?.Invoke(Mouse.current.position.ReadValue()); }
-        public void TriggerClickReleased() { onClickReleased?.Invoke(); }
+        public void TriggerClickPressed() { onLeftClickPressed?.Invoke(Mouse.current.position.ReadValue()); }
+        public void TriggerClickHeld() { onLeftClickHeld?.Invoke(Mouse.current.position.ReadValue()); }
+        public void TriggerClickReleased() { onLeftClickReleased?.Invoke(); }
         
         public void EnableInGameInputs() { m_InGameInputs.Enable(); }
         public void DisableInGameInputs() { m_InGameInputs.Disable(); }
