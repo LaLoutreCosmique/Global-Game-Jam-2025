@@ -15,6 +15,12 @@ namespace MainBubble
             m_Rb2D = GetComponent<Rigidbody2D>();
         }
 
+        void FixedUpdate()
+        {
+            float magnitude = Mathf.Clamp(m_Rb2D.linearVelocity.magnitude, 0, parent.maxSpeed);
+            m_Rb2D.linearVelocity = m_Rb2D.linearVelocity.normalized * magnitude;
+        }
+
         void OnCollisionEnter2D(Collision2D other)
         {
             if (!other.transform.CompareTag("Enemy")) return;
