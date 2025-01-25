@@ -27,7 +27,6 @@ namespace MainBubble
             if (!other.transform.CompareTag("ForceField")) return;
 
             ForceField field = other.GetComponent<ForceField>();
-            print(field.transform.up);
             m_Rb2D.AddForce(field.transform.up * field.Force);
         }
     }
