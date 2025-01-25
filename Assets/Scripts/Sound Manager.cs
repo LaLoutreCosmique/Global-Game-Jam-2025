@@ -26,7 +26,7 @@ public class SoundManager : MonoBehaviour
         mixer.SetFloat("musicVolume", Mathf.Log10(musicSlider.value) * 20);
     }
 
-    public void ChangeSfxVolume()
+    public void ChangeSfxVolume(float value)
     {
         mixer.SetFloat("SfxVolume", Mathf.Log10(sfxSlider.value) * 20);
     }
