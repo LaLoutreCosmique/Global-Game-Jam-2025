@@ -10,6 +10,7 @@ namespace Bubble.MainBubble
         [SerializeField] SpriteShapeController spriteShape;
         [SerializeField] Transform[] points;
         [SerializeField] float tangentMagnitude;
+        [SerializeField] float offset;
 
         void Awake()
         {
@@ -31,11 +32,11 @@ namespace Bubble.MainBubble
 
                 try
                 {
-                    spriteShape.spline.SetPosition(i, (vertex - towardsCenter * colliderRadius));
+                    spriteShape.spline.SetPosition(i, vertex - towardsCenter * (colliderRadius - offset));
                 }
                 catch
                 {
-                    spriteShape.spline.SetPosition(i, (vertex - towardsCenter * (colliderRadius + slpineOffset)));
+                    spriteShape.spline.SetPosition(i, (vertex - towardsCenter * (colliderRadius - offset + slpineOffset)));
                 }
 
                 Vector2 newRTangent = Vector2.Perpendicular(towardsCenter) * tangentMagnitude;
