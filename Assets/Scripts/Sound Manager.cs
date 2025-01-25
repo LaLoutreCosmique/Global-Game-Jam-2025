@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -29,5 +30,11 @@ public class SoundManager : MonoBehaviour
     public void ChangeSfxVolume(float value)
     {
         mixer.SetFloat("SfxVolume", Mathf.Log10(sfxSlider.value) * 20);
+    }
+
+    public void PlaySFX(AudioSource clip)
+    {
+        clip = clip.GetComponent<AudioSource>();
+        clip.Play();
     }
 }
