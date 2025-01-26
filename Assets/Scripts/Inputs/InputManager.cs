@@ -17,10 +17,15 @@ namespace Inputs
         public UnityEvent<Vector2> onLeftClickHeld;
         public UnityEvent onLeftClickReleased;
 
+        public UnityEvent<Vector2> onRightClickPressed;
+        public UnityEvent<Vector2> onRightClickHeld;
+        public UnityEvent onRightClickReleased;
+
         [Header("Debug")]
         [SerializeField] bool m_EnableInGameInputOnLoad = true;
 
         bool m_LeftClickHeld;
+        bool m_RightClickHeld;
 
         void Awake()
         {
@@ -34,42 +39,76 @@ namespace Inputs
 
         void OnEnable()
         {
-            m_InGameInputs.LeftClick.started += _ => TriggerClickPressed();
-            m_InGameInputs.LeftClick.canceled += _ => TriggerClickReleased();
+            m_InGameInputs.LeftClick.started += _ => TriggerLeftClickPressed();
+            m_InGameInputs.LeftClick.canceled += _ => TriggerLeftClickReleased();
+            
+            m_InGameInputs.RightClick.started += _ => TriggerRightClickPressed();
+            m_InGameInputs.RightClick.canceled += _ => TriggerRightClickReleased();
         }
 
         void OnDisable()
         {
-            m_InGameInputs.LeftClick.started -= _ => TriggerClickPressed();
-            m_InGameInputs.LeftClick.canceled -= _ => TriggerClickReleased();
+            m_InGameInputs.LeftClick.started -= _ => TriggerLeftClickPressed();
+            m_InGameInputs.LeftClick.canceled -= _ => TriggerLeftClickReleased();
 
+            m_InGameInputs.RightClick.started -= _ => TriggerRightClickPressed();
+            m_InGameInputs.RightClick.canceled -= _ => TriggerRightClickReleased();
         }
 
-        void TriggerClickPressed()
+        #region Left Click Methods
+        void TriggerLeftClickPressed()
         {
             m_LeftClickHeld = true;
-            StartCoroutine(HoldClick());
+            StartCoroutine(HoldLeftClick());
             onLeftClickPressed?.Invoke(Mouse.current.position.ReadValue());
         }
-        void TriggerClickHeld() { onLeftClickHeld?.Invoke(Mouse.current.position.ReadValue()); }
+        void TriggerLeftClickHeld() { onLeftClickHeld?.Invoke(Mouse.current.position.ReadValue()); }
 
-        void TriggerClickReleased()
+        void TriggerLeftClickReleased()
         {
             m_LeftClickHeld = false;
             onLeftClickReleased?.Invoke();
         }
-        
-        public void EnableInGameInputs() { m_InGameInputs.Enable(); }
-        public void DisableInGameInputs() { m_InGameInputs.Disable(); }
 
-        IEnumerator HoldClick()
+        IEnumerator HoldLeftClick()
         {
             yield return new WaitForSeconds(0.05f);
             while (m_LeftClickHeld)
             {
-                TriggerClickHeld();
+                TriggerLeftClickHeld();
                 yield return new WaitForFixedUpdate();
             }
         }
+        
+        #endregion
+        
+        #region Right Click Methods
+        void TriggerRightClickPressed()
+        {
+            m_RightClickHeld = true;
+            StartCoroutine(HoldRightClick());
+            onRightClickPressed?.Invoke(Mouse.current.position.ReadValue());
+        }
+        void TriggerRightClickHeld() { onRightClickHeld?.Invoke(Mouse.current.position.ReadValue()); }
+
+        void TriggerRightClickReleased()
+        {
+            m_RightClickHeld = false;
+            onRightClickReleased?.Invoke();
+        }
+        
+        IEnumerator HoldRightClick()
+        {
+            yield return new WaitForSeconds(0.05f);
+            while (m_RightClickHeld)
+            {
+                TriggerRightClickHeld();
+                yield return new WaitForFixedUpdate();
+            }
+        }
+        #endregion
+        
+        public void EnableInGameInputs() { m_InGameInputs.Enable(); }
+        public void DisableInGameInputs() { m_InGameInputs.Disable(); }
     }
 }

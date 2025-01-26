@@ -1,3 +1,4 @@
+using System;
 using Bubble;
 using Cam;
 using UnityEngine;
@@ -7,6 +8,8 @@ public class Spawner : MonoBehaviour
 {
     public UnityEvent onStartInflating;
     public UnityEvent onStopInflating;
+    public UnityEvent onStartDeflating;
+    public UnityEvent onStopDeflating;
 
     [SerializeField] GameObject bubblePrefab;
     [SerializeField] CameraFollow camFollow;
@@ -43,10 +46,51 @@ public class Spawner : MonoBehaviour
             m_TargetBubble.Inflate();
     }
 
+    // Called by event
     public void StopInflateBubble()
     {
         m_TargetBubble = null;
         onStopInflating?.Invoke();
+    }
+    
+    // Called by event
+    public void PopBubble(Vector2 screenPos)
+    {
+        RaycastHit2D hit = CheckLayer(screenPos, bubbleLayer);
+        
+        if (!hit) return;
+        
+        var bubble = hit.transform.GetComponent<Bubble.Bubble>();
+        if (bubble && !bubble.IsDead)
+            bubble.PopByClick();
+    }
+    
+    // called by event
+    public void DeflateBubble(Vector2 screenPos)
+    {
+        RaycastHit2D hit = CheckLayer(screenPos, bubbleLayer);
+        
+        if (!hit)
+        {
+            m_TargetBubble = null;
+            onStopDeflating?.Invoke();
+            return;
+        }
+
+        if (m_TargetBubble == null)
+        {
+            m_TargetBubble = hit.transform.GetComponent<Bubble.Bubble>();
+            onStartDeflating?.Invoke();
+        }
+        else
+            m_TargetBubble.DeflateByClick();
+    }
+    
+    // Called by event
+    public void StopDeflateBubble()
+    {
+        m_TargetBubble = null;
+        onStopDeflating?.Invoke();
     }
 
     Vector2 GetMousePosition(Vector2 screenPos)

@@ -21,6 +21,8 @@ namespace Bubble
         List<BubblePoint> collidingPoints = new ();
         float m_InitialScale;
 
+        public bool IsDead => m_IsDead;
+
         void Awake()
         {
             m_InitialScale = transform.localScale.magnitude;
@@ -34,6 +36,11 @@ namespace Bubble
             poofAnim.gameObject.SetActive(true);
             poofAnim.SetTrigger("Poof");
             m_IsDead = true;
+        }
+
+        public void PopByClick()
+        {
+            if (popAtRightClick) Pop();
         }
         
         public virtual void StartCollide(BubblePoint point)
@@ -60,7 +67,13 @@ namespace Bubble
                 transform.localScale *= 1 + Time.deltaTime;
         }
 
-        public void Deflate()
+        public void DeflateByClick()
+        {
+            if (!m_IsDeflating) m_IsDeflating = true;
+            Deflate();
+        }
+
+        protected void Deflate()
         {
             if (popAtRightClick)
             {

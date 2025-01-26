@@ -562,6 +562,12 @@ MonoBehaviour:
   onStopInflating:
     m_PersistentCalls:
       m_Calls: []
+  onStartDeflating:
+    m_PersistentCalls:
+      m_Calls: []
+  onStopDeflating:
+    m_PersistentCalls:
+      m_Calls: []
   bubblePrefab: {fileID: 2504056308432276097, guid: 827f6616f0092384aa33659ba8a3511b, type: 3}
   camFollow: {fileID: 752309852}
   bubbleLayer:
@@ -630,6 +636,51 @@ MonoBehaviour:
       - m_Target: {fileID: 474411096}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: StopInflateBubble
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRightClickPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 474411096}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: PopBubble
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRightClickHeld:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 474411096}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: DeflateBubble
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRightClickReleased:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 474411096}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: StopDeflateBubble
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

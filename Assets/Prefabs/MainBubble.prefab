@@ -2338,7 +2338,7 @@ MonoBehaviour:
   poofAnim: {fileID: 7445208883682434493}
   spriteRenderer: {fileID: 8418777557048391263}
   maxSpeed: 7
-  maxScale: 3
+  maxScale: 5
   popAtRightClick: 0
   onPop:
     m_PersistentCalls:
