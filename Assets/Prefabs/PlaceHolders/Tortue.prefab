@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8433981986990446283}
   - component: {fileID: 3973335488723742532}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: T_Turtle_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: -8692795087227145561}
   - component: {fileID: -447433695733413381}
   - component: {fileID: 5056212956336895225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tortue
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 4001936821340546637}
   - component: {fileID: 7473099041886554953}
   - component: {fileID: 8675257065701726297}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 4648279491752952392}
   - component: {fileID: 1442242760698144902}
   - component: {fileID: 1699167092148231823}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5844137274309808732}
   - component: {fileID: 5888552221335607225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 100406943317626399}
   - component: {fileID: 177456122309378212}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -669,7 +669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3120362177513963186}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Turtle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -20,14 +20,16 @@ public class Tortue : MonoBehaviour
          }
      }
 
-     private void OnTriggerEnter2D(Collider2D other)
-    {Debug.Log("collision");
-        transform.DOScaleY(-transform.localScale.y, rotationSpeed);
-        direction = !direction;
-        /* (other.gameObject.CompareTag("turtlezone"))
-        {
-            Debug.Log("turtle");
-            moveSpeed *= -1;
-        }*/
-    }
+     private void OnCollisionEnter2D(Collision2D other)
+     {
+         {Debug.Log("collision");
+             transform.DOScaleY(-transform.localScale.y, rotationSpeed);
+             direction = !direction;
+             /* (other.gameObject.CompareTag("turtlezone"))
+             {
+                 Debug.Log("turtle");
+                 moveSpeed *= -1;
+             }*/
+         }
+     }
 }
