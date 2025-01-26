@@ -1138,6 +1138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnerManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5375637538845232099, guid: f2b1f8f546e67d844b7d0d254da90768, type: 3}
+      propertyPath: camFollow
+      value: 
+      objectReference: {fileID: 1135508133}
     - target: {fileID: 7138094765528806303, guid: f2b1f8f546e67d844b7d0d254da90768, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
