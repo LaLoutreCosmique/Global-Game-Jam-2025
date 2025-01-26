@@ -6,8 +6,10 @@ namespace Bubble
 {
     public class SpawnedBubble : Bubble
     {
-        [SerializeField] float popTimer;
+        [SerializeField] PopZone popZone;
         
+        [SerializeField] float popTimer;
+
         void OnEnable()
         {
             StartCoroutine(PopCountdown());
@@ -23,7 +25,7 @@ namespace Bubble
         {
             base.Pop();
             
-            
+            popZone.StartPop();
         }
     }
 }

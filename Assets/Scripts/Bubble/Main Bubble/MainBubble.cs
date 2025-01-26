@@ -37,6 +37,7 @@ namespace Bubble.MainBubble
 
         public void ResetBubble()
         {
+            poofAnim.SetTrigger("Reset");
             spriteRenderer.enabled = true;
             m_IsDead = false;
         }
