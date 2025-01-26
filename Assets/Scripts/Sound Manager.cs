@@ -37,5 +37,9 @@ public class SoundManager : MonoBehaviour
         clip = clip.GetComponent<AudioSource>();
         clip.Play();
     }
-    
+
+    public void StopSFX(AudioSource clip)
+    {
+        clip.Stop();
+    }
 }
