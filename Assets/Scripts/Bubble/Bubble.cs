@@ -8,9 +8,10 @@ namespace Bubble
 {
     public class Bubble : MonoBehaviour
     {
-        [SerializeField] Animator poofAnim;
+        [SerializeField] protected Animator poofAnim;
         [SerializeField] protected SpriteShapeRenderer spriteRenderer;
 
+        [SerializeField] float graityByScaleMult;
         public float maxSpeed;
         [SerializeField] float maxScale;
         [SerializeField] bool popAtRightClick;
