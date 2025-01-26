@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class EndScreenScript : MonoBehaviour
@@ -27,5 +28,18 @@ public class EndScreenScript : MonoBehaviour
             canvasButton.gameObject.SetActive(true);
             gameWinCanvas.gameObject.SetActive(true);
         }
+    }
+
+    public void LoseScreen()
+    {
+        StartCoroutine(losing());
+    }
+
+    IEnumerator losing()
+    {
+        yield return new WaitForSeconds(1f);
+
+        canvasButton.gameObject.SetActive(true);
+        gameLoseCanvas.gameObject.SetActive(true);
     }
 }
