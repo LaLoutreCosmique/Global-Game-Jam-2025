@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.U2D;
 
 namespace Bubble
@@ -11,7 +12,7 @@ namespace Bubble
         [SerializeField] protected Animator poofAnim;
         [SerializeField] protected SpriteShapeRenderer spriteRenderer;
 
-        [SerializeField] float graityByScaleMult;
+        [SerializeField] float maxSpeedByScale;
         public float maxSpeed;
         [SerializeField] float maxScale;
         [SerializeField] bool popAtRightClick;
@@ -21,12 +22,14 @@ namespace Bubble
         protected bool m_IsDeflating;
         List<BubblePoint> collidingPoints = new ();
         float m_InitialScale;
+        float m_InitialMaxSpeed;
 
         public bool IsDead => m_IsDead;
 
         void Awake()
         {
             m_InitialScale = transform.localScale.magnitude;
+            m_InitialMaxSpeed = maxSpeed;
         }
 
         public virtual void Pop()
@@ -64,8 +67,10 @@ namespace Bubble
 
         public virtual void Inflate()
         {
-            if (transform.localScale.magnitude < maxScale)
-                transform.localScale *= 1 + Time.deltaTime;
+            if (!(transform.localScale.magnitude < maxScale)) return;
+            
+            UpdateMaxSpeedByScale(true);
+            transform.localScale *= 1 + Time.deltaTime;
         }
 
         public void DeflateByClick()
@@ -83,9 +88,25 @@ namespace Bubble
             }
 
             if (transform.localScale.magnitude >= m_InitialScale)
+            {
+                UpdateMaxSpeedByScale(false);
                 transform.localScale /= 1 + Time.deltaTime;
+            }
             else if (m_IsDeflating)
                 m_IsDeflating = false;
+        }
+        
+        void UpdateMaxSpeedByScale(bool increase)
+        {
+            //maxSpeed += transform.localScale.magnitude * maxSpeedByScale;
+            if (increase)
+                maxSpeed += Mathf.InverseLerp(m_InitialScale, maxScale, transform.localScale.magnitude) * maxSpeedByScale;
+            else
+            {
+                maxSpeed -= Mathf.InverseLerp(m_InitialScale, maxScale, transform.localScale.magnitude) * maxSpeedByScale;
+                maxSpeed = Mathf.Clamp(maxSpeed, m_InitialMaxSpeed, Single.PositiveInfinity);
+            }
+                
         }
 
         // TODO: En gros tu fais grossir un collider pour simuler une explosion???

@@ -1082,6 +1082,14 @@ PrefabInstance:
       propertyPath: m_Distance
       value: 0.58916646
       objectReference: {fileID: 0}
+    - target: {fileID: 3446751069803922544, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3446751069803922544, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3497057252857251576, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
       propertyPath: m_Creator
       value: 

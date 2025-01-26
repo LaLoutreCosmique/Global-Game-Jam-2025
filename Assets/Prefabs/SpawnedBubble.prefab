@@ -963,6 +963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poofAnim: {fileID: 5004080103284373268}
   spriteRenderer: {fileID: 2466280035819929525}
+  maxSpeedByScale: 0
   maxSpeed: 0.4
   maxScale: 3
   popAtRightClick: 1
