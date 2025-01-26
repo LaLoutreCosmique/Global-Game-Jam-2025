@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4717096956169632559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7138094765528806303}
+  - component: {fileID: 5375637538845232099}
+  - component: {fileID: 2876307930347391547}
+  m_Layer: 0
+  m_Name: SpawnerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7138094765528806303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4717096956169632559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5375637538845232099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4717096956169632559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b54a72dc228d04f839b4e5002cf241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStartInflating:
+    m_PersistentCalls:
+      m_Calls: []
+  onStopInflating:
+    m_PersistentCalls:
+      m_Calls: []
+  onStartDeflating:
+    m_PersistentCalls:
+      m_Calls: []
+  onStopDeflating:
+    m_PersistentCalls:
+      m_Calls: []
+  bubblePrefab: {fileID: 2504056308432276097, guid: 827f6616f0092384aa33659ba8a3511b, type: 3}
+  camFollow: {fileID: 0}
+  bubbleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &2876307930347391547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4717096956169632559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01ee9b26c13b9f428d81524c6dfcc79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onLeftClickPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5375637538845232099}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: SpawnBubble
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onLeftClickHeld:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5375637538845232099}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: InflateBubble
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onLeftClickReleased:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5375637538845232099}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: StopInflateBubble
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRightClickPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5375637538845232099}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: PopBubble
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRightClickHeld:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5375637538845232099}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: DeflateBubble
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRightClickReleased:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5375637538845232099}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: StopDeflateBubble
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_EnableInGameInputOnLoad: 1
