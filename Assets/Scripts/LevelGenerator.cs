@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class LevelGenerator : MonoBehaviour
 {
-    [SerializeField] private int numberOfPanels = 15;
+    [SerializeField] private int numberOfPanels = 13;
     [SerializeField] private List<GameObject> panels = new();
     private List<GameObject> currentPanels = new();
 
@@ -41,7 +41,7 @@ public class LevelGenerator : MonoBehaviour
         foreach (var panel in currentPanels)
         {
             Instantiate(panel, pos, Quaternion.identity);
-            pos.y +=15;
+            pos.y +=12;
             Debug.Log(pos.y);
         }
     }

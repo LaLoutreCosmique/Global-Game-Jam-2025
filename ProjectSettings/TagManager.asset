@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - ForceField
+  - turtlezone
   layers:
   - Default
   - TransparentFX
