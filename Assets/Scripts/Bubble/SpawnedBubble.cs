@@ -1,17 +1,29 @@
+using System;
+using System.Collections;
+using UnityEngine;
+
 namespace Bubble
 {
     public class SpawnedBubble : Bubble
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
-        {
+        [SerializeField] float popTimer;
         
+        void OnEnable()
+        {
+            StartCoroutine(PopCountdown());
         }
 
-        // Update is called once per frame
-        void Update()
+        IEnumerator PopCountdown()
         {
-        
+            yield return new WaitForSeconds(popTimer);
+            Pop();
+        }
+
+        public override void Pop()
+        {
+            base.Pop();
+            
+            
         }
     }
 }

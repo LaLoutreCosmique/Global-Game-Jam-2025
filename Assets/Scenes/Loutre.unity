@@ -562,6 +562,12 @@ MonoBehaviour:
   onStopInflating:
     m_PersistentCalls:
       m_Calls: []
+  onStartDeflating:
+    m_PersistentCalls:
+      m_Calls: []
+  onStopDeflating:
+    m_PersistentCalls:
+      m_Calls: []
   bubblePrefab: {fileID: 2504056308432276097, guid: 827f6616f0092384aa33659ba8a3511b, type: 3}
   camFollow: {fileID: 752309852}
   bubbleLayer:
@@ -630,6 +636,51 @@ MonoBehaviour:
       - m_Target: {fileID: 474411096}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: StopInflateBubble
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRightClickPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 474411096}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: PopBubble
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRightClickHeld:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 474411096}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: DeflateBubble
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onRightClickReleased:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 474411096}
+        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
+        m_MethodName: StopDeflateBubble
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1011,13 +1062,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2783106240594427506, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
-      propertyPath: m_Constraints
-      value: 0
+    - target: {fileID: 948345699313994511, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.69310033
+      objectReference: {fileID: 0}
+    - target: {fileID: 982807041243167195, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.5656156
+      objectReference: {fileID: 0}
+    - target: {fileID: 2305912353586046636, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.98813874
+      objectReference: {fileID: 0}
+    - target: {fileID: 3052819942908805037, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.5656156
+      objectReference: {fileID: 0}
+    - target: {fileID: 3220850520956199342, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.58916646
       objectReference: {fileID: 0}
     - target: {fileID: 3497057252857251576, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
       propertyPath: m_Creator
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083604557069414459, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.5839879
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732566759844767269, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.61051214
       objectReference: {fileID: 0}
     - target: {fileID: 4791828623597541872, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1059,13 +1134,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8076212413249064199, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
-      propertyPath: maxScale
-      value: 3
+    - target: {fileID: 6093105613235196611, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.5839879
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743518030971943944, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.61051214
+      objectReference: {fileID: 0}
+    - target: {fileID: 6839081339745085882, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.58916646
+      objectReference: {fileID: 0}
+    - target: {fileID: 7334075649875337783, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.61051214
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869591088702294302, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.58916646
+      objectReference: {fileID: 0}
+    - target: {fileID: 8412974256201846561, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.5656156
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593935283582327930, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.64845973
       objectReference: {fileID: 0}
     - target: {fileID: 8673115754522742864, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
       propertyPath: m_Name
       value: MainBubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175848484704867949, guid: bb476c9789fae66438e57c98b2e02857, type: 3}
+      propertyPath: m_Distance
+      value: 0.5839879
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
