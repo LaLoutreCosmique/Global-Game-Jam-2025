@@ -106,13 +106,6 @@ namespace Bubble
                 maxSpeed -= Mathf.InverseLerp(m_InitialScale, maxScale, transform.localScale.magnitude) * maxSpeedByScale;
                 maxSpeed = Mathf.Clamp(maxSpeed, m_InitialMaxSpeed, Single.PositiveInfinity);
             }
-                
-        }
-
-        // TODO: En gros tu fais grossir un collider pour simuler une explosion???
-        public void Explode()
-        {
-            
         }
     }
 }
