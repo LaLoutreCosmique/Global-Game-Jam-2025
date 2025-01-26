@@ -25,8 +25,10 @@ namespace Bubble.MainBubble
             parent.StopCollide(this);
         }
 
-        void OnTriggerStay2D(Collider2D other)
+        protected override void OnTriggerStay2D(Collider2D other)
         {
+            base.OnTriggerStay2D(other);
+            
             if (!other.transform.CompareTag("ForceField")) return;
 
             ForceField field = other.GetComponent<ForceField>();
