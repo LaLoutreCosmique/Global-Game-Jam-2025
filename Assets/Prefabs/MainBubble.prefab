@@ -837,7 +837,7 @@ SpriteShapeRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: e19c52e2ec64c9841b3ab2be7be13347, type: 3}
@@ -1529,7 +1529,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -45148895, guid: 24d3245c4e1da4f41b3f489294e08ae2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1640,7 +1640,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: -38712153, guid: 51843aeeb4d532f49b1d773f72c09112, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2206,13 +2206,14 @@ GameObject:
   - component: {fileID: 7456326676829699997}
   - component: {fileID: 3446751069803922544}
   - component: {fileID: 8076212413249064199}
+  - component: {fileID: 1783555005464190351}
   m_Layer: 6
   m_Name: MainBubble
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4791828623597541872
 Transform:
   m_ObjectHideFlags: 0
@@ -2338,7 +2339,7 @@ MonoBehaviour:
   poofAnim: {fileID: 7445208883682434493}
   spriteRenderer: {fileID: 8418777557048391263}
   maxSpeedByScale: 1.2
-  maxSpeed: 7
+  maxSpeed: 5
   maxScale: 3
   popAtRightClick: 0
   onPop:
@@ -2352,3 +2353,16 @@ MonoBehaviour:
       m_Calls: []
   eyes: {fileID: 6181175269622017831}
   timeBeforeDeflate: 2
+--- !u!114 &1783555005464190351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8673115754522742864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2e7b47634a75f40965742b0a8eae0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}

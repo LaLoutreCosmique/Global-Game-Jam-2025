@@ -37,4 +37,5 @@ public class SoundManager : MonoBehaviour
         clip = clip.GetComponent<AudioSource>();
         clip.Play();
     }
+    
 }

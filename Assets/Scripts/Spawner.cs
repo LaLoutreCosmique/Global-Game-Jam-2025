@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour
     public UnityEvent onStopInflating;
     public UnityEvent onStartDeflating;
     public UnityEvent onStopDeflating;
+    public UnityEvent onBubbleSpawn;
 
     [SerializeField] GameObject bubblePrefab;
     [SerializeField] CameraFollow camFollow;
@@ -23,6 +24,7 @@ public class Spawner : MonoBehaviour
         if (CheckLayer(screenPos)) return;
         
         Instantiate(bubblePrefab, GetMousePosition(screenPos), Quaternion.identity);
+        onBubbleSpawn?.Invoke();
     }
 
     // Called by event

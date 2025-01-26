@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: b406f7d0ef55ed645b69b309608eb022
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3742002246398406551
+    second: T_Background_Algae_0
+  - first:
+      213: -1780404295516932118
+    second: T_Background_Algae_1
+  - first:
+      213: -3262634334026975448
+    second: T_Background_Algae_2
+  - first:
+      213: 912236356725407853
+    second: T_Background_Algae_3
+  - first:
+      213: 8265945183224789838
+    second: T_Background_Algae_4
+  - first:
+      213: 8127502322903089361
+    second: T_Background_Algae_5
+  - first:
+      213: 4297579692799452824
+    second: T_Background_Algae_6
+  - first:
+      213: 6300470067257000184
+    second: T_Background_Algae_7
+  - first:
+      213: 8218646092849566501
+    second: T_Background_Algae_8
+  - first:
+      213: -4974271297282666741
+    second: T_Background_Algae_9
+  - first:
+      213: -4496190667711841246
+    second: T_Background_Algae_10
+  - first:
+      213: -8885678401400835806
+    second: T_Background_Algae_11
+  - first:
+      213: -3747274813065330311
+    second: T_Background_Algae_12
+  - first:
+      213: 5483730592480681246
+    second: T_Background_Algae_13
+  - first:
+      213: 4171825279443118631
+    second: T_Background_Algae_14
+  - first:
+      213: -3197236346470825719
+    second: T_Background_Algae_15
+  - first:
+      213: 4714214608123774699
+    second: T_Background_Algae_16
+  - first:
+      213: 517111985777443916
+    second: T_Background_Algae_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: T_Background_Algae_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13227
+        width: 283
+        height: 2319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96095ba68ccb11cc0800000000000000
+      internalID: -3742002246398406551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 14849
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae73229e9bbba47e0800000000000000
+      internalID: -1780404295516932118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_2
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 14554
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82734500c5bc8b2d0800000000000000
+      internalID: -3262634334026975448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_3
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 12966
+        width: 481
+        height: 1647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6080d9122ae8ac00800000000000000
+      internalID: 912236356725407853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_4
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 14490
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bf6fa695986b270800000000000000
+      internalID: 8265945183224789838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_5
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 14471
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d00dc32d40bac070800000000000000
+      internalID: 8127502322903089361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9403
+        width: 437
+        height: 1519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8966e3706f114ab30800000000000000
+      internalID: 4297579692799452824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7607
+        width: 816
+        height: 2665
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0c5d41524cf6750800000000000000
+      internalID: 6300470067257000184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_8
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 7690
+        width: 422
+        height: 4106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52353f2c31f7e0270800000000000000
+      internalID: 8218646092849566501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 7642
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f8b052c96d7fab0800000000000000
+      internalID: -4974271297282666741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4822
+        width: 381
+        height: 1925
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22cfb98d8625a91c0800000000000000
+      internalID: -4496190667711841246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2322
+        width: 684
+        height: 2594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2217420829abfa480800000000000000
+      internalID: -8885678401400835806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_12
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 3132
+        width: 764
+        height: 3717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971097359610ffbc0800000000000000
+      internalID: -3747274813065330311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_13
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 3167
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dd0c87bef1a1c40800000000000000
+      internalID: 5483730592480681246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 149
+        width: 674
+        height: 2502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72aa3360dfc45e930800000000000000
+      internalID: 4171825279443118631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 181
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90183a98b7221a3d0800000000000000
+      internalID: -3197236346470825719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_16
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 189
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6cc2885314c6140800000000000000
+      internalID: 4714214608123774699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_Background_Algae_17
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 0
+        width: 383
+        height: 1709
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c448c5d7c962d2700800000000000000
+      internalID: 517111985777443916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      T_Background_Algae_0: -3742002246398406551
+      T_Background_Algae_1: -1780404295516932118
+      T_Background_Algae_10: -4496190667711841246
+      T_Background_Algae_11: -8885678401400835806
+      T_Background_Algae_12: -3747274813065330311
+      T_Background_Algae_13: 5483730592480681246
+      T_Background_Algae_14: 4171825279443118631
+      T_Background_Algae_15: -3197236346470825719
+      T_Background_Algae_16: 4714214608123774699
+      T_Background_Algae_17: 517111985777443916
+      T_Background_Algae_2: -3262634334026975448
+      T_Background_Algae_3: 912236356725407853
+      T_Background_Algae_4: 8265945183224789838
+      T_Background_Algae_5: 8127502322903089361
+      T_Background_Algae_6: 4297579692799452824
+      T_Background_Algae_7: 6300470067257000184
+      T_Background_Algae_8: 8218646092849566501
+      T_Background_Algae_9: -4974271297282666741
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
