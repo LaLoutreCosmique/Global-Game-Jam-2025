@@ -426,7 +426,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -9116537440832759699, guid: 153311097ece1614b9d0ac6c8fc55587, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 47ce91902aaaea94881d96ca2e327878, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 47ce91902aaaea94881d96ca2e327878, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2128,7 +2128,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Programming : Axel, La Loutre Cosmique
 
-    Game Design : Fabien
+    Game Design : Ren
 
     Son
     : Ofushi/Pierre, JulienPR
