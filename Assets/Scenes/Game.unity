@@ -763,6 +763,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1135508130}
+    - target: {fileID: 3481807341014973158, guid: 837899dfb8b2c994fa6a1775393ef8fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoBack
+      objectReference: {fileID: 0}
     - target: {fileID: 4453628595765091019, guid: 837899dfb8b2c994fa6a1775393ef8fc, type: 3}
       propertyPath: mainCanvas
       value: 
