@@ -1,40 +1,119 @@
 using System;
-using System.Collections;
+using Bubble;
+using Cam;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Spawner : MonoBehaviour
 {
-    //[SerializeField] private GameObject[] bulles = new GameObject[1];
-    [SerializeField] private GameObject bulle;
-    //[SerializeField] private int _slotSelected;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public UnityEvent onStartInflating;
+    public UnityEvent onStopInflating;
+    public UnityEvent onStartDeflating;
+    public UnityEvent onStopDeflating;
+
+    [SerializeField] GameObject bubblePrefab;
+    [SerializeField] CameraFollow camFollow;
+    [SerializeField] LayerMask bubbleLayer;
+
+    Bubble.Bubble m_TargetBubble;
+    
+    // Called by event
+    public void SpawnBubble(Vector2 screenPos)
     {
+        if (CheckLayer(screenPos)) return;
         
+        Instantiate(bubblePrefab, GetMousePosition(screenPos), Quaternion.identity);
     }
 
-    // Update is called once per frame
-    void Update()
+    // Called by event
+    public void InflateBubble(Vector2 screenPos)
     {
-        
-        if (Input.GetMouseButtonDown(0))
+        RaycastHit2D hit = CheckLayer(screenPos, bubbleLayer);
+
+        if (!hit)
         {
-            //_slotSelected = 0; Remplacer par la méthode pour savoir quel bulle le joueur à choisi
-            Spawning(bulle);
-            
+            m_TargetBubble = null;
+            onStopInflating?.Invoke();
+            return;
         }
-    }
-    
-    private Vector2 GetMousePosition()
-    {
-        return UnityEngine.Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (m_TargetBubble == null)
+        {
+            m_TargetBubble = hit.transform.GetComponent<Bubble.Bubble>();
+            onStartInflating?.Invoke();
+        }
+        else
+            m_TargetBubble.Inflate();
     }
 
-    private void Spawning(GameObject bulleChoosen)
+    // Called by event
+    public void StopInflateBubble()
     {
-        var actualBulle =Instantiate(bulleChoosen, GetMousePosition(), Quaternion.identity);
-        Destroy(actualBulle, 3f);
+        m_TargetBubble = null;
+        onStopInflating?.Invoke();
+    }
+    
+    // Called by event
+    public void PopBubble(Vector2 screenPos)
+    {
+        RaycastHit2D hit = CheckLayer(screenPos, bubbleLayer);
+        
+        if (!hit) return;
+        
+        var bubble = hit.transform.GetComponent<Bubble.Bubble>();
+        if (bubble && !bubble.IsDead)
+            bubble.PopByClick();
+    }
+    
+    // called by event
+    public void DeflateBubble(Vector2 screenPos)
+    {
+        RaycastHit2D hit = CheckLayer(screenPos, bubbleLayer);
+        
+        if (!hit)
+        {
+            m_TargetBubble = null;
+            onStopDeflating?.Invoke();
+            return;
+        }
+
+        if (m_TargetBubble == null)
+        {
+            m_TargetBubble = hit.transform.GetComponent<Bubble.Bubble>();
+            onStartDeflating?.Invoke();
+        }
+        else
+            m_TargetBubble.DeflateByClick();
+    }
+    
+    // Called by event
+    public void StopDeflateBubble()
+    {
+        m_TargetBubble = null;
+        onStopDeflating?.Invoke();
     }
 
+    Vector2 GetMousePosition(Vector2 screenPos)
+    {
+        
+        Vector3 screenWithOffset = new Vector3(screenPos.x, screenPos.y, -camFollow.offset.z); 
+        Vector2 screenToWorld = camFollow.cam.ScreenToWorldPoint(screenWithOffset);
+        return screenToWorld;
+    }
     
+    RaycastHit2D CheckLayer(Vector2 screenPos)
+    {
+        Ray ray = camFollow.cam.ScreenPointToRay(screenPos);
+        RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
+
+        return hit;
+    }
+
+    RaycastHit2D CheckLayer(Vector2 screenPos, LayerMask layer)
+    {
+        Ray ray = camFollow.cam.ScreenPointToRay(screenPos);
+        RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity, layer);
+
+        return hit;
+    }
 }
