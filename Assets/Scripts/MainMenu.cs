@@ -39,4 +39,9 @@ public class MainMenu : MonoBehaviour
         settingsCanvas.gameObject.SetActive(false);
         mainCanvas.gameObject.SetActive(true);
     }
+
+    public void GoBack()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
