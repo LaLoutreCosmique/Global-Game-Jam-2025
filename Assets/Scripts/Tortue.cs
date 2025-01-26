@@ -24,10 +24,10 @@ public class Tortue : MonoBehaviour
     {Debug.Log("collision");
         transform.DOScaleY(-transform.localScale.y, rotationSpeed);
         direction = !direction;
-        if (other.gameObject.CompareTag("turtlezone"))
+        /* (other.gameObject.CompareTag("turtlezone"))
         {
             Debug.Log("turtle");
             moveSpeed *= -1;
-        }
+        }*/
     }
 }
